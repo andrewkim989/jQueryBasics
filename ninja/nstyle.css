@@ -1,0 +1,12 @@
+#wrapper {
+    background-color: rgb(142, 142, 233);
+    width: 700px;
+}
+#wrapper img {
+    background-color: white;
+    margin: 10px;
+    width: 150px;
+}
+#wrapper button {
+    margin: 10px;
+}

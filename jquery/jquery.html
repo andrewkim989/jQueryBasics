@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery examples</title>
+        <link rel = "stylesheet" type = "text/css" href = "jstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready (function() {
+                $("div.addClass button").click(function() {
+                    $("div.addClass p").addClass("red");
+                });
+                $("div.slideToggle button").click(function() {
+                    $("div.slideToggle p").slideToggle();
+                });
+                $("div.append button").click(function() {
+                    $("div.append p").append("<li>Hi. Bye.</li>");
+                });
+                $("div.click button").click(function() {
+                    alert("You did it! Now we get to throw you a party!");
+                });
+                $("div.hideshow #hide").click(function() {
+                    $("div.hideshow h4").hide();
+                });
+                $("div.hideshow #show").click(function() {
+                    $("div.hideshow h4").show();
+                });
+                $("div.toggle button").click(function() {
+                    $("div.toggle h4").toggle();
+                });
+                $("div.upanddown #up").click(function() {
+                    $("div.upanddown h4").slideUp();
+                });
+                $("div.upanddown #down").click(function() {
+                    $("div.upanddown h4").slideDown();
+                });
+                $("div.fade #out").click(function() {
+                    $("div.fade h4").fadeOut();
+                });
+                $("div.fade #in").click(function() {
+                    $("div.fade h4").fadeIn();
+                });
+                $("div.ba #before").click(function() {
+                    $("div.ba h4").before("MLP:FiM for the win. ");
+                });
+                $("div.ba #after").click(function() {
+                    $("div.ba h4").after("MLP:FiM is a great show. ");
+                });
+                $("div.html button").click(function() {
+                    $("div.html h4").html("Of course not! Anyone can watch the show!");
+                });
+                $("div.attr button").click(function() {
+                    $("div.attr img").attr("width", 500);
+                });
+                $("div.val button").click(function() {
+                    $("div.val input:text").val("It's party time!");
+                });
+                $("div.text button").click(function() {
+                    $("div.text h4").html("It's one of the best shows of all time!");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "addClass">
+                <h1>AddClass</h1>
+                <p>Click the button below to add class "red" to this paragraph.</p>
+                <button type = "button">AddClass</button>
+            </div>
+            <div class = "slideToggle">
+                <h1>slideToggle</h1>
+                <p>Click the button below to slidetoggle this paragraph.</p>
+                <button type = "button">slideToggle</button>
+            </div>
+            <div class = "append">
+                <h1>Append</h1>
+                <p>Click the button below to append a list of phrases.</p>
+                <button type = "button">Append</button>
+            </div>
+            <div class = "click">
+                <h1>Click</h1>
+                <p>Click the button below to get a surprise message.</p>
+                <button type = "button">Click this button!</button>
+            </div>
+            <div class = "hideshow">
+                <h1>Hide and Show</h1>
+                <p>Click the buttons to make the word below disappear and appear.</p>
+                <h4>I'm here. Or not.</h4>
+                <button id = "hide" type = "button">Hide</button>
+                <button id = "show" type = "button">Show</button>
+            </div>
+            <div class = "toggle">
+                <h1>Toggle</h1>
+                <p>Click the button below to hide or show the sentence below.</p>
+                <h4>No need to use two buttons to hide or show this sentence.</h4>
+                <button type = "button">Toggle</button>
+            </div>
+            <div class = "upanddown">
+                <h1>Up and Down</h1>
+                <p>Click the buttons to make the words below disappear and appear.</p>
+                <h4>Rainbow Dash is best pony.</h4>
+                <h4>Nah. It's actually Princess Luna. </h4>
+                <button id = "up" type = "button">Slide Up</button>
+                <button id = "down" type = "button">Slide Down</button>
+            </div>
+            <div class = "fade">
+                <h1>Fade In and Out</h1>
+                <p>Click the buttons to make the words below fade in or out.</p>
+                <h4>Hi, everyone. Bye, everyone.</h4>
+                <button id = "out" type = "button">Fade Out</button>
+                <button id = "in" type = "button">Fade In</button>
+            </div>
+            <div class = "ba">
+                <h1>Before and After</h1>
+                <p>Click the buttons to make words appear before or after the text below.</p>
+                <h4>Click the buttons for a surprise!</h4>
+                <p>Trust me, it's an awesome surprise.</p>
+                <button id = "before" type = "button">Before</button>
+                <button id = "after" type = "button">After</button>
+            </div>
+            <div class = "html">
+                <h1>HTML</h1>
+                <p>Click the button below to change the text below to another text.</p>
+                <h4>MLP:FiM is a show that only kids should watch.</h4>
+                <button type = "button">Oh, really?</button>
+            </div>
+            <div class = "attr">
+                <h1>ATTR</h1>
+                <p>Click the button below to change the image's dimension.</p>
+                <img src = "rainbowdash.jpeg"
+                alt = "Rainbow Dash Plushie"><br>
+                <button type = "button">Make it bigger!</button>
+            </div>
+            <div class = "val">
+                <h1>ATR</h1>
+                <p>Type anything below, then click the button to replace the letters
+                with something else. </p>
+                <p>Type here: <input type = "text" name = "user"></p>
+                <button type = "button">Replace it with another text</button>
+            </div>
+            <div class = "text">
+                <h1>Text</h1>
+                <p>Click the button below to change the text to another text.</p>
+                <h4>MLP: FiM is an awesome show.</h4>
+                <button type = "button">You're correct!</button>
+            </div>
+        </div>
+    </body>
+</html>

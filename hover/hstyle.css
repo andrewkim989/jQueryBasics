@@ -1,0 +1,8 @@
+#wrapper {
+    background-color: white;
+    width: 1300px;
+}
+#wrapper img {
+    padding: 10px;
+    width: 300px;
+}
